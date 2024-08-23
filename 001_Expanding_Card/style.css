@@ -11,6 +11,7 @@ body{
     height: 100vh;
 }
 
+/* CARD */
 .card{
     display: flex;
     width: 90vh;
@@ -48,5 +49,6 @@ body{
     color: white;
     font-size: 24px;
     text-align: left;
-    padding: 75vh 0 0 2vh;
+    position: relative;
+    inset: 92% 0 0 5%;
 }
