@@ -1,0 +1,79 @@
+/* CAMBIOS GLOBALES. */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #b0a8ba;
+    --seco-color: #4a4453;
+    --tree-color: #7b62a3;
+    --title-font: "Fira Sans Condensed", sans-serif;
+    --parra-font: "Poiret One", sans-serif;     
+}
+
+/* BODY: Cambios generales. */
+body {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 30vh);
+    gap: 10rem;
+}
+
+/* TARGEJETA */
+.tarjeta {
+    border-radius: 1rem;
+    border: 2px groove black;
+    margin: 1rem;
+    width: 35vh;
+    height: 55vh;
+    background-color: var(--seco-color);
+}
+
+/* IMAGEN */
+img {
+    width: 20rem;
+    filter: blur(4px);
+}
+
+/* FONT */
+h1 {
+    font-family: var(--title-font);
+    position: relative;
+    inset: 5% 0 0 3%;
+    color: white;
+    filter: blur(4px);
+}
+h3 {
+    font-family: var(--parra-font);
+    position: relative;
+    inset: 6% 0 0 3%;
+    color: rgba(255, 255, 255, 0.733);
+    filter: blur(4px);
+}
+
+.tarjeta:hover {
+    transition: 1000ms;
+    border: 2px solid white;
+    border-radius: 3rem;
+    img {
+        transform: scale(1.5);
+        filter: blur(0px);
+        transition: 500ms;
+    }
+    h1, h3 {
+        filter: blur(0px);
+        transition: 500ms;
+    }
+    
+}
