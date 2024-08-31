@@ -49,6 +49,9 @@ body {
     .mode_dark {
         filter: blur(4px);
     }
+    & :hover {
+        cursor: pointer;
+    }
 }
 
 
@@ -93,5 +96,8 @@ body {
     }
     .mode_light {
         filter: blur(4px);
+    }
+    & :hover {
+        cursor: pointer;
     }
 }
